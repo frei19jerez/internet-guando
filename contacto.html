@@ -3,82 +3,92 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contacto - TU-WIFI</title>
-  <meta name="description" content="Escríbenos por formulario o WhatsApp. Atención rápida de TU-WIFI." />
+  <title>Contacto - Mi ISP</title>
+  <meta name="description" content="Contáctanos por WhatsApp. Atención rápida y personalizada para planes de internet, cobertura e instalación." />
   <link rel="stylesheet" href="css/styles.css" />
 </head>
+
 <body>
+
   <!-- HEADER -->
   <header>
     <div class="logo">
-      <!-- Cambia el nombre del archivo si tu logo se llama distinto -->
-      <img src="imagen/tu-wife.png" alt="Logo TU-WIFI" loading="lazy" />
-      <h1>TU-WIFI</h1>
+      <img src="imagen/tu-wife.png" alt="Logo Mi ISP" loading="lazy" />
+      <span class="brand">TU-WIFI</span>
     </div>
 
-    <nav class="navbar" aria-label="Principal">
+    <nav class="navbar">
       <ul id="menu">
         <li><a href="index.html">Inicio</a></li>
         <li><a href="planes.html">Planes</a></li>
         <li><a href="cobertura.html">Cobertura</a></li>
-        <li><a href="contacto.html" class="active" aria-current="page">Contacto</a></li>
-        <li><a href="cliente/login.html" class="btn">Área Clientes</a></li>
+        <li><a href="contacto.html" class="active">Contacto</a></li>
+        
       </ul>
-      <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">
-        &#9776;
-      </button>
+
+      <div class="menu-toggle" id="menu-toggle">&#9776;</div>
     </nav>
   </header>
 
   <!-- CONTACTO -->
   <main>
+
     <section class="beneficios">
       <h2>Contáctanos</h2>
+      <p>Estamos listos para ayudarte con planes, cobertura, instalación y soporte técnico.</p>
 
-      <form id="formContacto" class="card form-card" novalidate>
-        <div class="field">
-          <label for="nombre">Nombre</label>
-          <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" autocomplete="name" required />
-        </div>
+      <div class="card" style="max-width:650px; margin:auto; text-align:center;">
 
-        <div class="field">
-          <label for="email">Email</label>
-          <input id="email" name="email" type="email" placeholder="tucorreo@dominio.com" autocomplete="email" required />
-        </div>
+        <h3>📲 Atención por WhatsApp</h3>
 
-        <div class="field">
-          <label for="telefono">Teléfono (Colombia)</label>
-          <input id="telefono" name="telefono" type="tel" placeholder="3009020221"
-                 inputmode="numeric" pattern="3[0-9]{9}" maxlength="10" value="" required />
-          <small>Ej: 3XXXXXXXXX (solo números)</small>
-        </div>
+        <p>
+          Escríbenos ahora y recibe atención rápida y personalizada.
+        </p>
 
-        <div class="field">
-          <label for="mensaje">Mensaje</label>
-          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Quiero información del servicio…" required></textarea>
-        </div>
+        <a 
+          href="https://wa.me/573009020221?text=Hola,%20quiero%20información%20sobre%20internet"
+          target="_blank"
+          class="btn-primary"
+          style="margin-top:15px; display:inline-block;">
+          Escribir por WhatsApp
+        </a>
 
-        <button type="submit" class="btn-primary glow">Enviar por WhatsApp</button>
-
-        <div class="alt-links">
-          <a id="linkWapp" href="#" target="_blank" rel="noopener" class="btn-outline">📲 WhatsApp directo</a>
-          <a id="linkTel" href="#" class="btn-outline">📞 Llamar</a>
-          <a id="linkMail" href="mailto:soporte@tu-wifi.com?subject=Contacto%20TU-WIFI" class="btn-outline">✉️ Enviar email</a>
-        </div>
-      </form>
+      </div>
     </section>
+
+    <!-- REQUISITOS -->
+    <section class="beneficios">
+      <h2>Datos para Solicitar el Servicio</h2>
+      <p>Para activar cualquiera de nuestros planes, envíanos la siguiente información:</p>
+
+      <div class="card" style="max-width:700px; margin:auto; text-align:left;">
+        <ul style="padding-left:20px; line-height:2;">
+          <li>Nombre completo</li>
+          <li>Número de documento</li>
+          <li>2 números de celular</li>
+          <li>Dirección completa</li>
+          <li>Ubicación actual (descripción y GPS)</li>
+        </ul>
+      </div>
+    </section>
+
   </main>
 
-  <!-- BOTÓN FLOTANTE WHATSAPP -->
-  <a id="wappFloat" href="#" target="_blank" rel="noopener" aria-label="Chatear por WhatsApp" class="wapp-float">
+  <!-- BOTÓN FLOTANTE -->
+  <a 
+    href="https://wa.me/573009020221?text=Hola,%20quiero%20información"
+    target="_blank"
+    class="wapp-float"
+    aria-label="Chatear por WhatsApp">
     WhatsApp
   </a>
 
   <!-- FOOTER -->
   <footer>
-    <p>&copy; <span id="year"></span> TU-WIFI — Todos los derechos reservados</p>
+    <p>&copy; 2025 TU-WIFI - Todos los derechos reservados</p>
   </footer>
 
   <script src="js/main.js"></script>
+
 </body>
 </html>
